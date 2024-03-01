@@ -1,0 +1,15 @@
+{
+"contact": "TheWaffleLord",
+"templates": [
+{
+"name": "Lilou",
+"sources": [
+"https://raw.githubusercontent.com/TheWaffleLord37/Random-Templates/main/mareplace/lilou.png"
+],
+"x": 0,
+"y": 0
+}
+],
+"whitelist": [],
+"blacklist": []
+}
