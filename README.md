@@ -1,1 +1,1 @@
-Image hosting for random templates on pxls.space.
+Image hosting for random templates on r/place clones.
