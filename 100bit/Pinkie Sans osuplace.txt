@@ -6,8 +6,8 @@
 "sources": [
 "https://raw.githubusercontent.com/TheWaffleLord37/Random-Templates/main/100bit/Pinkie%20Sans.png"
 ],
-"x": 100,
-"y": 100
+"x": 0,
+"y": 0
 }
 ],
 "whitelist": [],
