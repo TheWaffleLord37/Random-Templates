@@ -1,0 +1,15 @@
+{
+"contact": "Goldenstar",
+"templates": [
+{
+"name": "peeking ponies",
+"sources": [
+"https://raw.githubusercontent.com/TheWaffleLord37/Random-Templates/main/mareplace/peeking%20ponies.png"
+],
+"x": 0,
+"y": 0
+}
+],
+"whitelist": [],
+"blacklist": []
+}
