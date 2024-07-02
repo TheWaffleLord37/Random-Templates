@@ -1,0 +1,15 @@
+{
+"contact": "TheWaffleLord",
+"templates": [
+{
+"name": "Cocoa",
+"sources": [
+"https://raw.githubusercontent.com/TheWaffleLord37/Random-Templates/main/100bit/Cocoa.png"
+],
+"x": 179,
+"y": 0
+}
+],
+"whitelist": [],
+"blacklist": []
+}
