@@ -1,1 +1,1 @@
-Image hosting for random templates on r/place clones.
+Image hosting for templates on r/place clones.
