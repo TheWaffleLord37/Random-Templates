@@ -1,0 +1,15 @@
+{
+"contact": "TheWaffleLord",
+"templates": [
+{
+"name": "RD Nom & Space Pones",
+"sources": [
+"https://raw.githubusercontent.com/TheWaffleLord37/Random-Templates/refs/heads/main/mareplace/RD%20Nom%20%26%20Space%20Pones.png"
+],
+"x": 0,
+"y": 0
+}
+],
+"whitelist": [],
+"blacklist": []
+}
