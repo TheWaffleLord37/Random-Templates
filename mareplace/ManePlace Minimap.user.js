@@ -2,7 +2,7 @@
 // @name        ManePlace Minimap
 // @namespace   http://tampermonkey.net/
 // @description ponk
-// @match       https://pixels.bronies.space/ui/
+// @match       https://canvas.bronies.space/ui/
 // @version     0.4
 // @grant       GM.xmlHttpRequest
 // @author      Starshine
