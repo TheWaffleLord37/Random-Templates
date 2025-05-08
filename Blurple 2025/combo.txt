@@ -1,0 +1,14 @@
+{
+    "faction": "combo",
+    "contact": "TheWaffleLord",
+    "templates": [
+        {
+            "name": "combo",
+            "sources": [
+                "wip"
+            ],
+            "x": 0,
+            "y": 0
+        }
+    ]
+}
