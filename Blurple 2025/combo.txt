@@ -5,7 +5,7 @@
         {
             "name": "combo",
             "sources": [
-                "wip"
+                "https://raw.githubusercontent.com/TheWaffleLord37/Random-Templates/refs/heads/main/Blurple%202025/combo.png"
             ],
             "x": 0,
             "y": 0
