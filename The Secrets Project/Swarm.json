@@ -1,0 +1,20 @@
+{
+"contact": "TheWaffleLord",
+"templates": [
+{
+"name": "Neuro-sama's Swarm",
+"sources": [
+"https://raw.githubusercontent.com/TheWaffleLord37/Random-Templates/refs/heads/main/The%20Secrets%20Project/Swarm.png"
+],
+"x": 411,
+"y": 791
+}
+],
+"whitelist": [
+  {
+    "name": "ManePxls",
+    "url": "https://raw.githubusercontent.com/TheWaffleLord37/Random-Templates/refs/heads/main/The%20Secrets%20Project/ManePxls.json"
+  }
+],
+"blacklist": []
+}
