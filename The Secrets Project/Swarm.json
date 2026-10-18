@@ -10,11 +10,6 @@
 "y": 792
 }
 ],
-"whitelist": [
-  {
-    "name": "ManePxls",
-    "url": "https://raw.githubusercontent.com/TheWaffleLord37/Random-Templates/refs/heads/main/The%20Secrets%20Project/ManePxls.json"
-  }
-],
+"whitelist": [],
 "blacklist": []
 }
