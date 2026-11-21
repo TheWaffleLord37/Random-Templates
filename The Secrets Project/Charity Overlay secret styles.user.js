@@ -677,12 +677,32 @@ function createSecretsProjectAdapter() {
       y: Math.floor((clientY - view.rect.top - view.oy) / view.scale)
     };
   }
+  // Elements that must always draw on top of the overlay.
+  const ABOVE_OVERLAY_SELECTOR = '.place-cooldown.place-float, .place-picker.game-floating-card';
+  // The overlay sits just above the board but below the lowest numeric z-index
+  // among the elements above, so those elements always cover it.
+  function getOverlayZIndex(board) {
+    const boardZ = parseInt(getComputedStyle(board).zIndex, 10);
+    const base = Number.isNaN(boardZ) ? 0 : boardZ;
+    let lowest = Infinity;
+    for (const element of document.querySelectorAll(ABOVE_OVERLAY_SELECTOR)) {
+      const z = parseInt(getComputedStyle(element).zIndex, 10);
+      if (!Number.isNaN(z) && z < lowest) lowest = z;
+    }
+    if (lowest === Infinity) return String(base);
+    return String(Math.max(base, lowest - 1));
+  }
   function updateOverlayStyles() {
     const board = getBoard();
     const parent = board && board.parentElement;
     if (!board || !usesBoard() || !parent) return false;
     const rect = board.getBoundingClientRect();
     const parentRect = parent.getBoundingClientRect();
+    // Sit directly after the board in the DOM, so that any later sibling (such
+    // as a floating card with an automatic z-index) paints over the overlay.
+    if (canvasContainer.parentElement !== parent || canvasContainer.previousSibling !== board) {
+      parent.insertBefore(canvasContainer, board.nextSibling);
+    }
     // The board can be moved around without resizing it - a collapsing header
     // or an opening dialog is enough - so this runs every frame and only writes
     // styles that actually changed.
@@ -691,7 +711,7 @@ function createSecretsProjectAdapter() {
       height: `${board.height}px`,
       left: `${rect.left - parentRect.left - parent.clientLeft}px`,
       top: `${rect.top - parentRect.top - parent.clientTop}px`,
-      zIndex: getComputedStyle(board).zIndex,
+      zIndex: getOverlayZIndex(board),
       transform: board.width ? `scale(${rect.width / board.width})` : 'none'
     };
     if (JSON.stringify(style) === applied) return true;
