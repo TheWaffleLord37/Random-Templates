@@ -1,0 +1,15 @@
+{
+"contact": "TheWaffleLord",
+"templates": [
+{
+"name": "palette test",
+"sources": [
+"https://raw.githubusercontent.com/TheWaffleLord37/Random-Templates/refs/heads/main/The%20Secrets%20Project/palette%20test.png"
+],
+"x": 50,
+"y": 50
+}
+],
+"whitelist": [],
+"blacklist": []
+}
